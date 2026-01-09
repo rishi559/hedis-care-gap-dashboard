@@ -13,26 +13,60 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Force light theme
+st.markdown("""
+    <style>
+    /* Force light background */
+    .main {
+        background-color: #ffffff;
+    }
+    [data-testid="stAppViewContainer"] {
+        background-color: #ffffff;
+    }
+    [data-testid="stHeader"] {
+        background-color: #ffffff;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #f8f9fa;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Custom CSS for better styling
 st.markdown("""
     <style>
     .main {
         padding: 0rem 1rem;
+        background-color: #ffffff !important;
     }
     .stMetric {
-        background-color: #f8f9fa;
+        background-color: #f0f4f8;
         padding: 15px;
         border-radius: 10px;
         border-left: 4px solid #3b82f6;
     }
+    .stMetric label {
+        color: #1f2937 !important;
+        font-weight: 600;
+    }
+    .stMetric [data-testid="stMetricValue"] {
+        color: #111827 !important;
+        font-size: 2rem !important;
+    }
+    .stMetric [data-testid="stMetricDelta"] {
+        color: #059669 !important;
+    }
     h1 {
-        color: #1e3a8a;
+        color: #1e3a8a !important;
         padding-bottom: 10px;
         border-bottom: 3px solid #3b82f6;
     }
-    h2 {
-        color: #374151;
+    h2, h3 {
+        color: #1f2937 !important;
         margin-top: 20px;
+    }
+    p, span, div {
+        color: #374151 !important;
     }
     .highlight-green {
         color: #10b981;
@@ -45,6 +79,17 @@ st.markdown("""
     .highlight-yellow {
         color: #f59e0b;
         font-weight: bold;
+    }
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {
+        background-color: #f8f9fa !important;
+    }
+    [data-testid="stSidebar"] * {
+        color: #1f2937 !important;
+    }
+    /* Make sure text is visible */
+    .stMarkdown {
+        color: #1f2937 !important;
     }
     </style>
     """, unsafe_allow_html=True)
