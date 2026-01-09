@@ -1,0 +1,6 @@
+Provider_Name,Specialty,Years_Experience,Patient_Panel_Size,HEDIS_Compliance_Rate,Gap_Closure_Rate,Avg_Days_To_Close,Patient_Satisfaction,Documentation_Quality,Productivity_Score,Referral_Completion,Cost_Efficiency,Overall_Score
+Dr. Sarah Martinez,Internal Medicine,12,425,89.5,72.2,54.3,4.8,92,95,88,91,88.5
+Dr. Robert Johnson,Family Medicine,10,370,88.2,75.0,59.8,4.7,90,88,92,89,87.8
+Dr. James Chen,Family Medicine,8,380,86.5,71.4,58.7,4.6,88,90,85,87,86.2
+Dr. Maria Rodriguez,Internal Medicine,15,340,84.8,62.5,67.2,4.4,85,82,83,84,83.5
+Dr. Michael Brown,Internal Medicine,6,365,85.2,62.5,64.5,4.5,87,85,86,85,84.8

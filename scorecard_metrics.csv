@@ -1,0 +1,10 @@
+Metric_Name,Category,Target_Value,Weight,Description,Good_Threshold,Warning_Threshold
+HEDIS_Compliance_Rate,Quality,85.0,20,Percentage of patients meeting HEDIS quality measures,87.0,83.0
+Gap_Closure_Rate,Quality,70.0,20,Percentage of identified care gaps successfully closed,73.0,67.0
+Avg_Days_To_Close,Quality,60.0,15,Average days to close a care gap (lower is better),55.0,65.0
+Patient_Satisfaction,Experience,4.5,15,Patient satisfaction score out of 5.0,4.7,4.3
+Documentation_Quality,Operations,90.0,10,Quality score for clinical documentation,92.0,88.0
+Productivity_Score,Operations,85.0,10,Patients seen relative to panel size benchmark,88.0,82.0
+Referral_Completion,Operations,85.0,5,Percentage of referrals completed by patients,88.0,82.0
+Cost_Efficiency,Financial,85.0,5,Cost per patient relative to benchmark,88.0,82.0
+Patient_Panel_Size,Productivity,400.0,0,Number of active patients in provider's panel,420.0,380.0
