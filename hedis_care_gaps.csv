@@ -1,0 +1,81 @@
+Gap_ID,Patient_ID,Measure_Name,Measure_Category,Gap_Status,Open_Date,Closed_Date,Days_Open,Site_Location,Provider_Name,Payer_Type,Patient_Age,Patient_Gender,Priority_Level
+G001,P10001,HbA1c Testing,Diabetes Care,Closed,2024-01-15,2024-02-10,26,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,67,Female,High
+G002,P10002,Colorectal Cancer Screening,Preventive Care,Closed,2024-01-18,2024-03-05,47,Westside Health Center,Dr. James Chen,Commercial,58,Male,Medium
+G003,P10003,Breast Cancer Screening,Preventive Care,Open,2024-02-01,,338,Eastside Medical,Dr. Maria Rodriguez,Medicaid,52,Female,High
+G004,P10004,Blood Pressure Control,Chronic Disease,Closed,2024-01-20,2024-02-15,26,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,72,Male,High
+G005,P10005,Eye Exam - Diabetic,Diabetes Care,Closed,2024-01-25,2024-03-10,45,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,65,Female,Medium
+G006,P10006,Statin Adherence,Medication Management,Open,2024-03-01,,314,Westside Health Center,Dr. James Chen,Commercial,61,Male,Medium
+G007,P10007,Kidney Screening - Diabetic,Diabetes Care,Closed,2024-02-05,2024-03-20,44,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,69,Female,High
+G008,P10008,Blood Pressure Control,Chronic Disease,Open,2024-03-15,,300,Eastside Medical,Dr. Maria Rodriguez,Medicaid,58,Male,High
+G009,P10009,HbA1c Testing,Diabetes Care,Closed,2024-02-10,2024-03-15,34,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,71,Male,High
+G010,P10010,Colorectal Cancer Screening,Preventive Care,Open,2024-03-20,,295,Downtown Clinic,Dr. Michael Brown,Commercial,60,Female,Medium
+G011,P10011,Diabetes Monitoring,Diabetes Care,Closed,2024-01-30,2024-02-25,26,Westside Health Center,Dr. James Chen,Medicare Advantage,68,Female,High
+G012,P10012,Breast Cancer Screening,Preventive Care,Closed,2024-02-15,2024-04-01,46,Eastside Medical,Dr. Maria Rodriguez,Commercial,54,Female,High
+G013,P10013,Blood Pressure Control,Chronic Disease,Closed,2024-02-20,2024-03-25,34,Northside Clinic,Dr. Robert Johnson,Medicaid,64,Male,High
+G014,P10014,Eye Exam - Diabetic,Diabetes Care,Open,2024-04-01,,283,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,70,Female,Medium
+G015,P10015,HbA1c Testing,Diabetes Care,Closed,2024-03-01,2024-04-10,40,Westside Health Center,Dr. Michael Brown,Medicare Advantage,66,Male,High
+G016,P10016,Statin Adherence,Medication Management,Closed,2024-02-25,2024-04-05,40,Eastside Medical,Dr. Maria Rodriguez,Commercial,59,Female,Medium
+G017,P10017,Kidney Screening - Diabetic,Diabetes Care,Open,2024-04-10,,274,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,73,Male,High
+G018,P10018,Colorectal Cancer Screening,Preventive Care,Closed,2024-03-05,2024-05-01,57,Downtown Clinic,Dr. Sarah Martinez,Medicaid,62,Male,Medium
+G019,P10019,Blood Pressure Control,Chronic Disease,Closed,2024-03-10,2024-04-20,41,Westside Health Center,Dr. James Chen,Medicare Advantage,69,Female,High
+G020,P10020,Breast Cancer Screening,Preventive Care,Open,2024-04-20,,264,Eastside Medical,Dr. Michael Brown,Commercial,56,Female,High
+G021,P10021,HbA1c Testing,Diabetes Care,Closed,2024-03-15,2024-05-05,51,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,68,Female,High
+G022,P10022,Eye Exam - Diabetic,Diabetes Care,Closed,2024-03-20,2024-05-10,51,Downtown Clinic,Dr. Sarah Martinez,Medicaid,71,Male,Medium
+G023,P10023,Statin Adherence,Medication Management,Open,2024-05-01,,253,Westside Health Center,Dr. James Chen,Commercial,63,Female,Medium
+G024,P10024,Blood Pressure Control,Chronic Disease,Closed,2024-04-01,2024-05-15,44,Eastside Medical,Dr. Maria Rodriguez,Medicare Advantage,67,Male,High
+G025,P10025,Kidney Screening - Diabetic,Diabetes Care,Closed,2024-04-05,2024-06-01,57,Northside Clinic,Dr. Michael Brown,Medicare Advantage,70,Female,High
+G026,P10026,Colorectal Cancer Screening,Preventive Care,Open,2024-05-10,,244,Downtown Clinic,Dr. Sarah Martinez,Commercial,59,Male,Medium
+G027,P10027,Breast Cancer Screening,Preventive Care,Closed,2024-04-15,2024-06-10,56,Westside Health Center,Dr. James Chen,Medicaid,53,Female,High
+G028,P10028,HbA1c Testing,Diabetes Care,Closed,2024-04-20,2024-06-15,56,Eastside Medical,Dr. Maria Rodriguez,Medicare Advantage,69,Male,High
+G029,P10029,Blood Pressure Control,Chronic Disease,Open,2024-06-01,,222,Northside Clinic,Dr. Robert Johnson,Commercial,65,Female,High
+G030,P10030,Eye Exam - Diabetic,Diabetes Care,Closed,2024-05-01,2024-07-01,61,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,72,Male,Medium
+G031,P10031,Statin Adherence,Medication Management,Closed,2024-05-05,2024-07-05,61,Westside Health Center,Dr. Michael Brown,Commercial,60,Female,Medium
+G032,P10032,Kidney Screening - Diabetic,Diabetes Care,Open,2024-06-10,,213,Eastside Medical,Dr. Maria Rodriguez,Medicare Advantage,68,Male,High
+G033,P10033,Colorectal Cancer Screening,Preventive Care,Closed,2024-05-15,2024-07-20,66,Northside Clinic,Dr. Robert Johnson,Medicaid,61,Female,Medium
+G034,P10034,Blood Pressure Control,Chronic Disease,Closed,2024-05-20,2024-07-25,66,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,70,Male,High
+G035,P10035,Breast Cancer Screening,Preventive Care,Open,2024-06-20,,203,Westside Health Center,Dr. James Chen,Commercial,55,Female,High
+G036,P10036,HbA1c Testing,Diabetes Care,Closed,2024-06-01,2024-08-01,61,Eastside Medical,Dr. Michael Brown,Medicare Advantage,67,Female,High
+G037,P10037,Eye Exam - Diabetic,Diabetes Care,Closed,2024-06-05,2024-08-10,66,Northside Clinic,Dr. Robert Johnson,Medicaid,73,Male,Medium
+G038,P10038,Statin Adherence,Medication Management,Open,2024-07-01,,192,Downtown Clinic,Dr. Sarah Martinez,Commercial,62,Female,Medium
+G039,P10039,Blood Pressure Control,Chronic Disease,Closed,2024-06-15,2024-08-20,66,Westside Health Center,Dr. James Chen,Medicare Advantage,66,Male,High
+G040,P10040,Kidney Screening - Diabetic,Diabetes Care,Closed,2024-06-20,2024-09-01,73,Eastside Medical,Dr. Maria Rodriguez,Medicare Advantage,71,Female,High
+G041,P10041,Colorectal Cancer Screening,Preventive Care,Open,2024-07-10,,184,Northside Clinic,Dr. Michael Brown,Commercial,58,Male,Medium
+G042,P10042,Breast Cancer Screening,Preventive Care,Closed,2024-07-01,2024-09-10,71,Downtown Clinic,Dr. Sarah Martinez,Medicaid,54,Female,High
+G043,P10043,HbA1c Testing,Diabetes Care,Closed,2024-07-05,2024-09-15,72,Westside Health Center,Dr. James Chen,Medicare Advantage,68,Male,High
+G044,P10044,Blood Pressure Control,Chronic Disease,Open,2024-08-01,,161,Eastside Medical,Dr. Maria Rodriguez,Commercial,64,Female,High
+G045,P10045,Eye Exam - Diabetic,Diabetes Care,Closed,2024-07-15,2024-10-01,78,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,70,Male,Medium
+G046,P10046,Statin Adherence,Medication Management,Closed,2024-07-20,2024-10-05,77,Downtown Clinic,Dr. Sarah Martinez,Commercial,61,Female,Medium
+G047,P10047,Kidney Screening - Diabetic,Diabetes Care,Open,2024-08-10,,152,Westside Health Center,Dr. Michael Brown,Medicare Advantage,69,Male,High
+G048,P10048,Colorectal Cancer Screening,Preventive Care,Closed,2024-08-01,2024-10-20,80,Eastside Medical,Dr. Maria Rodriguez,Medicaid,60,Female,Medium
+G049,P10049,Blood Pressure Control,Chronic Disease,Closed,2024-08-05,2024-10-25,81,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,72,Male,High
+G050,P10050,Breast Cancer Screening,Preventive Care,Open,2024-08-20,,142,Downtown Clinic,Dr. Sarah Martinez,Commercial,57,Female,High
+G051,P10051,HbA1c Testing,Diabetes Care,Closed,2024-08-15,2024-11-01,78,Westside Health Center,Dr. James Chen,Medicare Advantage,66,Female,High
+G052,P10052,Eye Exam - Diabetic,Diabetes Care,Closed,2024-08-25,2024-11-10,77,Eastside Medical,Dr. Michael Brown,Medicaid,74,Male,Medium
+G053,P10053,Statin Adherence,Medication Management,Open,2024-09-01,,130,Northside Clinic,Dr. Robert Johnson,Commercial,63,Female,Medium
+G054,P10054,Blood Pressure Control,Chronic Disease,Closed,2024-09-05,2024-11-20,76,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,68,Male,High
+G055,P10055,Kidney Screening - Diabetic,Diabetes Care,Closed,2024-09-10,2024-12-01,82,Westside Health Center,Dr. James Chen,Medicare Advantage,70,Female,High
+G056,P10056,Colorectal Cancer Screening,Preventive Care,Open,2024-09-20,,111,Eastside Medical,Dr. Maria Rodriguez,Commercial,59,Male,Medium
+G057,P10057,Breast Cancer Screening,Preventive Care,Closed,2024-09-15,2024-12-10,86,Northside Clinic,Dr. Michael Brown,Medicaid,55,Female,High
+G058,P10058,HbA1c Testing,Diabetes Care,Closed,2024-09-25,2024-12-15,81,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,67,Male,High
+G059,P10059,Blood Pressure Control,Chronic Disease,Open,2024-10-01,,100,Westside Health Center,Dr. James Chen,Commercial,65,Female,High
+G060,P10060,Eye Exam - Diabetic,Diabetes Care,Closed,2024-10-05,2024-12-25,81,Eastside Medical,Dr. Maria Rodriguez,Medicare Advantage,71,Male,Medium
+G061,P10061,Statin Adherence,Medication Management,Closed,2024-10-10,2024-12-30,81,Northside Clinic,Dr. Robert Johnson,Commercial,62,Female,Medium
+G062,P10062,Kidney Screening - Diabetic,Diabetes Care,Open,2024-10-20,,81,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,69,Male,High
+G063,P10063,Colorectal Cancer Screening,Preventive Care,Closed,2024-10-15,2025-01-05,82,Westside Health Center,Dr. Michael Brown,Medicaid,61,Female,Medium
+G064,P10064,Blood Pressure Control,Chronic Disease,Closed,2024-10-25,2025-01-08,75,Eastside Medical,Dr. Maria Rodriguez,Medicare Advantage,70,Male,High
+G065,P10065,Breast Cancer Screening,Preventive Care,Open,2024-11-01,,69,Northside Clinic,Dr. Robert Johnson,Commercial,56,Female,High
+G066,P10066,HbA1c Testing,Diabetes Care,Closed,2024-11-05,2025-01-09,65,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,68,Female,High
+G067,P10067,Eye Exam - Diabetic,Diabetes Care,Open,2024-11-10,,60,Westside Health Center,Dr. James Chen,Medicaid,73,Male,Medium
+G068,P10068,Statin Adherence,Medication Management,Open,2024-11-15,,55,Eastside Medical,Dr. Michael Brown,Commercial,64,Female,Medium
+G069,P10069,Blood Pressure Control,Chronic Disease,Open,2024-11-20,,50,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,67,Male,High
+G070,P10070,Kidney Screening - Diabetic,Diabetes Care,Open,2024-11-25,,45,Downtown Clinic,Dr. Sarah Martinez,Medicare Advantage,72,Female,High
+G071,P10071,Colorectal Cancer Screening,Preventive Care,Open,2024-12-01,,39,Westside Health Center,Dr. James Chen,Commercial,60,Male,Medium
+G072,P10072,Breast Cancer Screening,Preventive Care,Open,2024-12-05,,35,Eastside Medical,Dr. Maria Rodriguez,Medicaid,54,Female,High
+G073,P10073,HbA1c Testing,Diabetes Care,Open,2024-12-10,,30,Northside Clinic,Dr. Michael Brown,Medicare Advantage,69,Male,High
+G074,P10074,Blood Pressure Control,Chronic Disease,Open,2024-12-15,,25,Downtown Clinic,Dr. Sarah Martinez,Commercial,66,Female,High
+G075,P10075,Eye Exam - Diabetic,Diabetes Care,Open,2024-12-20,,20,Westside Health Center,Dr. James Chen,Medicare Advantage,71,Male,Medium
+G076,P10076,Statin Adherence,Medication Management,Open,2024-12-25,,15,Eastside Medical,Dr. Maria Rodriguez,Commercial,63,Female,Medium
+G077,P10077,Kidney Screening - Diabetic,Diabetes Care,Open,2025-01-01,,8,Northside Clinic,Dr. Robert Johnson,Medicare Advantage,70,Male,High
+G078,P10078,Colorectal Cancer Screening,Preventive Care,Open,2025-01-05,,4,Downtown Clinic,Dr. Sarah Martinez,Medicaid,62,Female,Medium
+G079,P10079,Blood Pressure Control,Chronic Disease,Closed,2024-11-01,2024-12-20,49,Westside Health Center,Dr. Michael Brown,Medicare Advantage,68,Male,High
+G080,P10080,Breast Cancer Screening,Preventive Care,Closed,2024-11-10,2024-12-28,48,Eastside Medical,Dr. Maria Rodriguez,Commercial,53,Female,High

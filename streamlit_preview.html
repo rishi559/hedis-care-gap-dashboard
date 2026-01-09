@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamlit Dashboard Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background: #0e1117;
+            padding: 20px;
+        }
+        
+        .preview-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: #262730;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        
+        .streamlit-header {
+            background: linear-gradient(90deg, #ff4b4b 0%, #ff8080 100%);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .streamlit-logo {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #ff4b4b;
+        }
+        
+        .streamlit-title {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .main-content {
+            display: flex;
+            background: #0e1117;
+        }
+        
+        .sidebar {
+            width: 280px;
+            background: #262730;
+            padding: 20px;
+            border-right: 1px solid #3d3d46;
+            color: #fafafa;
+        }
+        
+        .sidebar h3 {
+            color: #fafafa;
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .filter-group {
+            margin-bottom: 20px;
+        }
+        
+        .filter-label {
+            font-size: 14px;
+            color: #a3a8b4;
+            margin-bottom: 8px;
+        }
+        
+        .filter-box {
+            background: #0e1117;
+            border: 1px solid #3d3d46;
+            border-radius: 5px;
+            padding: 10px;
+            color: #fafafa;
+            font-size: 13px;
+        }
+        
+        .dashboard-content {
+            flex: 1;
+            padding: 30px;
+            color: #fafafa;
+        }
+        
+        .dashboard-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #fafafa;
+            margin-bottom: 5px;
+        }
+        
+        .dashboard-subtitle {
+            font-size: 16px;
+            color: #a3a8b4;
+            margin-bottom: 30px;
+        }
+        
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .kpi-card-streamlit {
+            background: #262730;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #3d3d46;
+        }
+        
+        .kpi-label-streamlit {
+            font-size: 14px;
+            color: #a3a8b4;
+            margin-bottom: 8px;
+        }
+        
+        .kpi-value-streamlit {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fafafa;
+            margin-bottom: 5px;
+        }
+        
+        .kpi-delta-streamlit {
+            font-size: 13px;
+            color: #09ab3b;
+        }
+        
+        .chart-section {
+            background: #262730;
+            border: 1px solid #3d3d46;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .chart-title-streamlit {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fafafa;
+            margin-bottom: 15px;
+        }
+        
+        .chart-placeholder-streamlit {
+            background: #1a1c23;
+            border-radius: 6px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #606770;
+            font-size: 14px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .chart-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-badge {
+            display: inline-block;
+            background: #ff4b4b;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .interactive-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 75, 75, 0.2);
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: #ff4b4b;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .gradient-line {
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #ff4b4b 0%, #09ab3b 50%, #ffd166 100%);
+            margin: 20px 0;
+        }
+        
+        .info-box {
+            background: rgba(9, 171, 59, 0.1);
+            border-left: 3px solid #09ab3b;
+            padding: 15px;
+            border-radius: 5px;
+            color: #a3a8b4;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <!-- Streamlit Header -->
+        <div class="streamlit-header">
+            <div class="streamlit-logo">ST</div>
+            <div class="streamlit-title">dashboard_app.py · Streamlit</div>
+        </div>
+        
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>🔍 Filters</h3>
+                
+                <div class="filter-group">
+                    <div class="filter-label">Select Sites</div>
+                    <div class="filter-box">
+                        ☑ Downtown Clinic<br>
+                        ☑ Westside Health Center<br>
+                        ☑ Eastside Medical<br>
+                        ☑ Northside Clinic
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="filter-label">Select Payer Types</div>
+                    <div class="filter-box">
+                        ☑ Medicare Advantage<br>
+                        ☑ Commercial<br>
+                        ☑ Medicaid
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <div class="filter-label">Select Measures</div>
+                    <div class="filter-box">
+                        ☑ Diabetes Care<br>
+                        ☑ Preventive Care<br>
+                        ☑ Chronic Disease<br>
+                        ☑ Medication Management
+                    </div>
+                </div>
+                
+                <div class="gradient-line"></div>
+                
+                <h3 style="margin-top: 20px;">📊 Dashboard Info</h3>
+                <div class="info-box">
+                    <strong>Data Sources:</strong><br>
+                    • HEDIS Quality Measures<br>
+                    • EHR System Integration<br>
+                    • Payer Quality Reports<br><br>
+                    <strong>Refresh Frequency:</strong><br>
+                    • Daily updates<br>
+                    • Real-time gap tracking
+                </div>
+            </div>
+            
+            <!-- Main Dashboard -->
+            <div class="dashboard-content">
+                <h1 class="dashboard-title">📊 HEDIS Care Gap Closure Dashboard</h1>
+                <p class="dashboard-subtitle">Q4 2024 Performance Overview | Last Updated: January 9, 2025</p>
+                
+                <!-- KPI Cards -->
+                <div class="kpi-grid">
+                    <div class="kpi-card-streamlit">
+                        <div class="kpi-label-streamlit">📋 Open Gaps</div>
+                        <div class="kpi-value-streamlit">29</div>
+                        <div class="kpi-delta-streamlit">↓ 22 vs closed</div>
+                    </div>
+                    <div class="kpi-card-streamlit">
+                        <div class="kpi-label-streamlit">✅ Closure Rate</div>
+                        <div class="kpi-value-streamlit">63.8%</div>
+                        <div class="kpi-delta-streamlit">↑ +1.3% vs last month</div>
+                    </div>
+                    <div class="kpi-card-streamlit">
+                        <div class="kpi-label-streamlit">🎯 Compliance Rate</div>
+                        <div class="kpi-value-streamlit">89.3%</div>
+                        <div class="kpi-delta-streamlit">↑ +4.3% vs target</div>
+                    </div>
+                    <div class="kpi-card-streamlit">
+                        <div class="kpi-label-streamlit">📈 Monthly Change</div>
+                        <div class="kpi-value-streamlit">+1.1%</div>
+                        <div class="kpi-delta-streamlit">Above trajectory</div>
+                    </div>
+                </div>
+                
+                <!-- Monthly Trend -->
+                <div class="chart-section">
+                    <h2 class="chart-title-streamlit">📈 Monthly Compliance Trend (2024-2025)
+                        <span class="feature-badge">INTERACTIVE</span>
+                    </h2>
+                    <div class="chart-placeholder-streamlit">
+                        <div class="interactive-icon">🖱️ Hover to explore</div>
+                        <svg width="100%" height="100%" style="position: absolute; top: 0; left: 0;">
+                            <defs>
+                                <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4299e1;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#4299e1;stop-opacity:0" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Target line -->
+                            <line x1="50" y1="150" x2="950" y2="150" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,5"/>
+                            <text x="900" y="145" fill="#ef4444" font-size="12">Target 85%</text>
+                            <!-- Trend line -->
+                            <polyline points="50,220 130,210 210,195 290,180 370,165 450,145 530,125 610,105 690,90 770,80 850,70 930,60" 
+                                      fill="url(#grad)" stroke="#4299e1" stroke-width="3"/>
+                            <!-- Data points -->
+                            <circle cx="50" cy="220" r="5" fill="#4299e1"/>
+                            <circle cx="130" cy="210" r="5" fill="#4299e1"/>
+                            <circle cx="210" cy="195" r="5" fill="#4299e1"/>
+                            <circle cx="290" cy="180" r="5" fill="#4299e1"/>
+                            <circle cx="370" cy="165" r="5" fill="#4299e1"/>
+                            <circle cx="450" cy="145" r="5" fill="#4299e1"/>
+                            <circle cx="530" cy="125" r="5" fill="#4299e1"/>
+                            <circle cx="610" cy="105" r="5" fill="#4299e1"/>
+                            <circle cx="690" cy="90" r="5" fill="#4299e1"/>
+                            <circle cx="770" cy="80" r="5" fill="#4299e1"/>
+                            <circle cx="850" cy="70" r="5" fill="#4299e1"/>
+                            <circle cx="930" cy="60" r="5" fill="#09ab3b"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Chart Grid -->
+                <div class="chart-grid">
+                    <div class="chart-section">
+                        <h2 class="chart-title-streamlit">🏥 Site Performance</h2>
+                        <div class="chart-placeholder-streamlit" style="height: 250px;">
+                            <div class="interactive-icon">🖱️ Click to filter</div>
+                            Interactive Bar Chart
+                        </div>
+                    </div>
+                    <div class="chart-section">
+                        <h2 class="chart-title-streamlit">👨‍⚕️ Provider Rankings</h2>
+                        <div class="chart-placeholder-streamlit" style="height: 250px;">
+                            <div class="interactive-icon">🖱️ Hover for details</div>
+                            Interactive Bar Chart
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-grid">
+                    <div class="chart-section">
+                        <h2 class="chart-title-streamlit">🎯 HEDIS Measures</h2>
+                        <div class="chart-placeholder-streamlit" style="height: 250px;">
+                            <div class="interactive-icon">🖱️ Zoom & Pan</div>
+                            Interactive Bubble Chart
+                        </div>
+                    </div>
+                    <div class="chart-section">
+                        <h2 class="chart-title-streamlit">💳 Payer Performance</h2>
+                        <div class="chart-placeholder-streamlit" style="height: 250px;">
+                            <div class="interactive-icon">🖱️ Compare values</div>
+                            Interactive Grouped Bars
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-box" style="background: rgba(255, 75, 75, 0.1); border-left-color: #ff4b4b;">
+                    <strong>💡 This is a fully interactive Streamlit app!</strong><br>
+                    All charts respond to filters in real-time. Click, hover, and explore the data dynamically.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

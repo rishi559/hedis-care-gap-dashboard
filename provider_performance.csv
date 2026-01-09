@@ -1,0 +1,6 @@
+Provider_Name,Site_Location,Total_Patients,Total_Gaps,Open_Gaps,Closed_Gaps,Closure_Rate,Avg_Days_to_Close,Patient_Panel_Size,Years_Experience,Specialization
+Dr. Sarah Martinez,Downtown Clinic,425,18,5,13,72.2,54.3,425,12,Internal Medicine
+Dr. James Chen,Westside Health Center,380,14,4,10,71.4,58.7,380,8,Family Medicine
+Dr. Maria Rodriguez,Eastside Medical,340,16,6,10,62.5,67.2,340,15,Internal Medicine
+Dr. Robert Johnson,Northside Clinic,370,16,4,12,75.0,59.8,370,10,Family Medicine
+Dr. Michael Brown,Multiple Sites,365,16,6,10,62.5,64.5,365,6,Internal Medicine
